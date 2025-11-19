@@ -1,0 +1,150 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #45a33d;
+  height: 100%;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+
+.panel-1 {
+  background-color: white;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 60px; /* стандартные отступы слева и справа */
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1000;
+}
+
+
+.left-part-1 {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.left-part-1 img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+
+.menu-1 {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item-1 {
+  position: relative;
+}
+
+.menu-title-1 {
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+  white-space: nowrap;
+  cursor: default;
+}
+
+.menu-title-1::after {
+  content: " ▼";
+  font-size: 12px;
+  opacity: 0.6;
+  margin-left: 4px;
+}
+
+.dropdown-1 {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  min-width: 240px;
+  border-radius: 14px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  padding: 16px 0;
+  margin-top: 10px;
+  z-index: 9999;
+}
+
+.dropdown-1 a {
+  display: block;
+  padding: 11px 28px;
+  color: #333;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.dropdown-1 a:hover {
+  background: #f8f8f8;
+}
+
+.menu-item-1:hover > .dropdown-1 {
+  display: block;
+}
+
+
+.menu-simple {
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+}
+
+.menu-simple:hover {
+  opacity: 0.7;
+}
+
+
+.right-panel-1 {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-left: auto; 
+  margin-right: -10px; 
+  
+  flex-shrink: 0;
+}
+.right-panel-1 .icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+
+  transition: opacity 0.2s;
+}
+
+.right-panel-1 .icon:hover {
+  opacity: 0.7;
+}
+
+.block-for-contact {
+  background-color: #286124;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  height: 55px;
+  width: 220px;
+  border-radius: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.block-for-contact:hover {
+  background-color: #45a33d;
+}
