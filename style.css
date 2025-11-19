@@ -148,3 +148,38 @@ html {
 .block-for-contact:hover {
   background-color: #45a33d;
 }
+
+container2 {
+  display: flex;
+  align-items: flex-start; 
+  padding: 50px 5%;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.container2-texts {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px; 
+  min-width: 300px;
+}
+
+.container2-text h2 {
+  font-size: 48px;
+  color: #064214;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.container2-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.container2-image img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+
